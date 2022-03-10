@@ -4,28 +4,40 @@ body{
 
 .implicationBinary {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
     display: flex;
+    transition: .5s;
 }
 
 .implicationBinary h1 {
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
+    transition: .5s;
+    margin: auto;
+}
+
+.implicationBinary.scrolled {
+    font-size: 0rem;
 }
 
 .implicationText {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
     display: flex;
+    transition: .5s;
 }
 
 .implicationText h1 {
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
+    transition: .5s;
+    margin: auto;
 }

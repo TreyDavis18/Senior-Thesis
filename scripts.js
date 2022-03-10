@@ -7,6 +7,6 @@ function scrollFunction() {
         document.getElementById("implicationBinary").style.fontSize = "0px";
     }
     else {
-        document.getElementById("implicationText").style.fontSize = "35px";
+        document.getElementById("implicationBinary").style.fontSize = "35px";
     }
 }
