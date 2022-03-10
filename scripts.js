@@ -1,12 +1,47 @@
-window.onscroll = function () {
-    scrollFunction()
-};
+function changeFontSize(type) {
 
-function scrollFunction() {
-    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-        document.getElementById("implicationBinary").style.fontSize = "0px";
-    }
-    else {
-        document.getElementById("implicationBinary").style.fontSize = "35px";
-    }
+    let ids = ["#implicationHashID"]
+
+    ids.forEach(id => {
+
+        let el = document.querySelector(id);
+
+        let opacity = window.getComputedStyle(el, null).getPropertyValue("opacity")
+
+        opacity = parseFloat(opacity);
+
+        if (type === "mine") {
+            el.style.opacity = (opacity = 0);
+        }
+    })
+
+    let idsTwo = ["#implicationTextID"]
+
+    idsTwo.forEach(id => {
+
+        let el = document.querySelector(id);
+
+        let opacity = window.getComputedStyle(el, null).getPropertyValue("font-size")
+
+        opacity = parseFloat(opacity);
+
+        if (type === "mine") {
+            el.style.opacity = (fontSize = 1);
+        }
+    })
+
+    let idsThree = ["#impactTextID"]
+
+    idsThree.forEach(id => {
+
+        let el = document.querySelector(id);
+
+        let opacity = window.getComputedStyle(el, null).getPropertyValue("font-size")
+
+        opacity = parseFloat(opacity);
+
+        if (type === "mine") {
+            el.style.opacity = (fontSize = 1);
+        }
+    })
 }

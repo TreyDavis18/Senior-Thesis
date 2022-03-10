@@ -2,7 +2,7 @@ body{
     background-color: #F8FFEB;
 }
 
-.implicationBinary {
+.implicationHash, .implicationText {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -10,34 +10,74 @@ body{
     text-align: center;
     transform: translate(-50%, -50%);
     display: flex;
-    transition: .5s;
 }
 
-.implicationBinary h1 {
+.implicationHash h1 {
     font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-    transition: .5s;
+    font-weight: 300;
+    font-size: 45px;
+    opacity: 1;
+    transition: 1s;
+    transition-timing-function: ease;
     margin: auto;
-}
-
-.implicationBinary.scrolled {
-    font-size: 0rem;
-}
-
-.implicationText {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    display: flex;
-    transition: .5s;
+    color: #335C67;
 }
 
 .implicationText h1 {
     font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-    transition: .5s;
+    font-weight: 300;
+    font-size: 45px;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
     margin: auto;
+    color: #335C67;
+}
+
+.container {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.impactText {
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.impactText p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 3.25s;
+    transition-timing-function: ease;
+    margin: auto;
+    color: #335C67;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+}
+
+
+button{
+    font-family: 'Barlow' sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 75px;
+    background: #335C67;
+    color: #F8FFEB;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5%;
 }
