@@ -2,7 +2,7 @@ body{
     background-color: #F8FFEB;
 }
 
-.implication {
+.implicationBinary {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,35 +11,21 @@ body{
     display: flex;
 }
 
-span#a {
-    overflow: hidden;
-    letter-spacing: 0;
-    transition: 1.5s;
+.implicationBinary h1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
 }
 
-span#b {
-    overflow: hidden;
-    letter-spacing: 1;
-    transition: 1.5s;
+.implicationText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    display: flex;
 }
 
-.implication span#a {
-    display: inline;
-}
-
-.implication:hover span#a {
-    letter-spacing: -1em;
-}
-
-.implication span#b {
-    display: none;
-}
-
-.implication:hover span#b {
-    letter-spacing: 1em;
-}
-
-.implication h1 {
+.implicationText h1 {
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
 }
