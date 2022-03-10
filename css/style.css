@@ -1,0 +1,45 @@
+body{
+    background-color: #F8FFEB;
+}
+
+.implication {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+span#a {
+    overflow: hidden;
+    letter-spacing: 0;
+    transition: 1.5s;
+}
+
+span#b {
+    overflow: hidden;
+    letter-spacing: 1;
+    transition: 1.5s;
+}
+
+.implication span#a {
+    display: inline;
+}
+
+.implication:hover span#a {
+    letter-spacing: -1em;
+}
+
+.implication span#b {
+    display: none;
+}
+
+.implication:hover span#b {
+    letter-spacing: 1em;
+}
+
+.implication h1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+}
