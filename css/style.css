@@ -1,6 +1,12 @@
 body{
-    background-color: #F8FFEB;
+    background-color: #494949;
 }
+
+/* 
+====================
+    IMAGES
+====================
+*/
 
 .implicationHash, .implicationText {
     position: absolute;
@@ -15,12 +21,12 @@ body{
 .implicationHash h1 {
     font-family: 'Barlow', sans-serif;
     font-weight: 300;
-    font-size: 45px;
+    font-size: 40px;
     opacity: 1;
     transition: 1s;
     transition-timing-function: ease;
     margin: auto;
-    color: #335C67;
+    color: #F8FFEB;
 }
 
 .implicationText h1 {
@@ -32,11 +38,12 @@ body{
     transition-delay: 1s;
     transition-timing-function: ease;
     margin: auto;
-    color: #335C67;
+    color: #F8FFEB;
 }
 
 .container {
-    margin: auto;
+    margin-left: 40%;
+    padding-top: 5%;
     width: 200px;
     height: 200px;
     text-align: center;
@@ -46,11 +53,12 @@ body{
 .impactText {
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 72%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
     display: flex;
+    margin-top: 2rem;
 }
 
 .impactText p {
@@ -62,22 +70,67 @@ body{
     transition-delay: 3.25s;
     transition-timing-function: ease;
     margin: auto;
-    color: #335C67;
+    color: #F8FFEB;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 25px;
 }
 
+/* 
+==========================
+    BACKGROUND IMAGES 
+==========================
+*/
+#cf {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    transition: 3s;
+}
+
+#cf img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 0;
+}
+
+#cf2 {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    transition: 3s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+
+#cf2 img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 0;
+}
+
+/* 
+================
+    BUTTON
+================
+*/
 
 button{
     font-family: 'Barlow' sans-serif;
-    font-size: 20px;
-    width: 200px;
+    font-size: 30px;
+    width: 300px;
     height: 75px;
-    background: #335C67;
+    background: none;
     color: #F8FFEB;
     border: none;
     user-select: none;
     cursor: pointer;
-    border-radius: 5%;
+}
+
+#button{
+    transition: 1s;
 }
