@@ -21,6 +21,7 @@ body {
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
+    perspective: 1000px;
 }
 
 .card__inner {
@@ -33,7 +34,7 @@ body {
 }
 
 .card__inner.is-flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 .card__face {
@@ -55,13 +56,14 @@ body {
 }
 
 .card__face--front h2 {
-    color: #fff;
+    color: var(--primary);
     font-size: 32px;
+    font-weight: 500;
 }
 
 .card__face--back {
     background-color: var(#fff);
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 .card__content {
