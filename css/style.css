@@ -16,7 +16,7 @@ body {
 }
 
 .content {
-    min-width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     background-size: 100%;
     background-color: #222;
@@ -61,7 +61,7 @@ body {
 /**Card Styling**/
 
 .card {
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     min-width: 400px;
     min-height: 600px;
     perspective: 1000px;
@@ -164,6 +164,9 @@ body {
 .group2,
 .group3,
 .group4 {
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2px;
+    margin-right: 2px;
     display: flex;
 }
