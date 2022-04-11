@@ -6,3 +6,9 @@ card.forEach((card) => card.addEventListener('click', function () {
 }));
 
 //Function for parallax
+window.addEventListener('scroll', function () {
+    const parallax = document.querySelector('.parallax');
+    let scrollPosition = window.scrollY;
+
+    parallax.style.transform = 'translateY(' + scrollPosition * 0.7 + 'px)';
+});
