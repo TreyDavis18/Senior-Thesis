@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Index</title>
 </head>
 
@@ -36,6 +37,31 @@
     </div>
 
     <div class="content">
+
+        <!-- <div class="button">
+            <button class="open" id="open">
+                Click me please!
+            </button>
+        </div>
+
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h1>About this site</h1>
+                <p>This site is the creation of my senior thesis course at the University of Northern Iowa. It is
+                    currently still under construction so may be missing some content/information. It is meant to
+                    show
+                    off a little of JavaScript as well as HTML and CSS while being informative on the implications
+                    that
+                    Bitcoin may have on our environment. The site contains cards that you can click on to flip over
+                    and
+                    learn more about the topic on the front. Have a great day!</p>
+
+                <button class="close" id="close">
+                    Click me to continue!
+                </button>
+            </div>
+        </div> -->
+
         <div class="sectionTitle">
             <h2>Bitcoin Background Information</h2>
         </div>
@@ -43,7 +69,7 @@
             <div class="card">
                 <div class="card__inner">
                     <div class="card__face card__face--front">
-                        <h2>What are Cryptocurrencies?</h2>
+                        <h2>What is Bitcoin?</h2>
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
@@ -83,7 +109,7 @@
             <div class="card">
                 <div class="card__inner">
                     <div class="card__face card__face--front">
-                        <h2>Who created Cryptocurrencies?</h2>
+                        <h2>Who created Bitcoin?</h2>
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
@@ -144,7 +170,7 @@
             <div class="card">
                 <div class="card__inner">
                     <div class="card__face card__face--front">
-                        <h2>How does cryptomining work?</h2>
+                        <h2>How does Bitcoin mining work?</h2>
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
@@ -178,105 +204,13 @@
         <div class="sectionTitle">
             <h2>Bitcoin's Energy Consumption</h2>
         </div>
-        <div class="group3">
-            <div class="card">
-                <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <h2>How much energy is used to mine a Bitcoin?</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-
-                            </div>
-                            <div class="card__body">
-                                <p>Mining for Bitcoin is not an energy efficient process. As of August 2021, around the
-                                    same
-                                    amount of energy that a typical household would use in 8 years. This is a little bit
-                                    better
-                                    than it was, hitting a max energy consumption of the average household over 13 years
-                                    in
-                                    early 2021, but this is still not a sustainable amount of energy for Bitcoin. (Huang
-                                    et
-                                    al.,
-                                    2021)</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <h2>How much energy is used on a Bitcoin transaction?</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-
-                            </div>
-                            <div class="card__body">
-                                <p>A report from 2021 stated that every Bitcoin transaction uses over 1,000 kWh of
-                                    electricity.
-                                    Even just using Bitcoin to buy a sandwich, uses more energy than an average
-                                    household
-                                    uses
-                                    in six weeks. (Find another metric to use here that makes a bigger impact) This is
-                                    equal
-                                    to
-                                    over $100 worth of energy for every single transaction.</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <h2>What does Bitcoin's energy consumption look like compared to other energy consumptions?</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-
-                            </div>
-                            <div class="card__body">
-                                <p>A 1,000 kWh per Bitcoin transaction is the same as:
-                                    <br>
-                                    <br>
-                                <ul>Using an oven stovetop or a portable heater for 666 hours</ul>
-                                <br>
-                                <ul>Watching shows on a 55” 4K LED TV for 8,333 hours</ul>
-                                <br>
-                                <ul>Making waffles for 3,030 hours (at 5 minutes per waffle, that is 36,360 waffles)
-                                </ul>
-                                <br>
-                                <ul>Running a pedestal fan for 33,333 hours (3.8 years)</ul>
-                                <br>
-                                <ul>Making 3,846 single serve coffees</ul>
-                                <br>
-                                <ul>Playing PS4 for 5.5 years</ul>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="graphs">
             <div class="tableau-name">
                 <h3>Yearly Energy Consumption in MWh</h3>
             </div>
             <div class="tableau-info">
-                <p>As of 2021, Bitcoin has an annual energy consumption of 91 million MWh, this puts the energy
+                <p>As of 2021, Bitcoin has a total annual energy consumption of 91 million MWh, this puts the energy
                     consumption of Bitcoin above 37 of the states in the United States of America. 91 million MWh could
                     power an avereage househould for over 8,272 years, or all of Vermont for 8 years.
                 </p>
@@ -303,6 +237,45 @@
                 </object></div>
             <script
                 type='text/javascript'>                    var divElement = document.getElementById('viz1649779423896'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.35) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+
+        <div class="implications">
+
+            <h2>How much energy is used to mine a bitcoin?</h2>
+
+            <p>Mining for Bitcoin is not an energy efficient process. As of August 2021, it uses around the same amount
+                of energy that a typical household would use in 8 years. This is a little bit better than it was,
+                hitting a max energy consumption of the average household over 13 years in early 2021, but this is still
+                not a sustainable amount of energy for Bitcoin. (Huang et al., 2021)</p>
+
+            <h2>How much energy is used on a Bitcoin transaction?</h2>
+
+            <p>A report from 2021 stated that every Bitcoin transaction uses over 1,000 kWh of electricity. Even just
+                using Bitcoin to buy a sandwich, uses more energy than an average household uses in six weeks. (Find
+                another metric to use here that makes a bigger impact) This is equal to over $100 worth of energy for
+                every single transaction.</p>
+
+            <h2>What does Bitcoin's energy consumption look like compared to other energy consumptions?</h2>
+
+            <p>1,000 kWh per Bitcoin transaction is the same as:
+                <br>
+                <br>
+            <ul>Using an oven stovetop or a portable heater for 666 hours</ul>
+            <br>
+            <ul>Watching shows on a 55” 4K LED TV for 8,333 hours</ul>
+            <br>
+            <ul>Making waffles for 3,030 hours (at 5 minutes per waffle, that is 36,360 waffles)
+            </ul>
+            <br>
+            <ul>Running a pedestal fan for 33,333 hours (3.8 years)</ul>
+            <br>
+            <ul>Making 3,846 single serve coffees</ul>
+            <br>
+            <ul>Playing PS4 for 5.5 years</ul>
+            <br>
+            </p>
+
+
         </div>
 
         <div class="sectionTitle">

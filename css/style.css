@@ -20,6 +20,86 @@ body {
     font-family: "Barlow", sans-serif;
 }
 
+/** Styling for Modal **/
+
+/* .button {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open {
+    font-family: "Barlow", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 8px;
+    color: var(--light);
+    padding: 1rem 2rem;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 8px;
+    color: var(--light);
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-container {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    color: var(--dark);
+    margin: 0;
+    max-height: 75vh;
+    max-width: 50vh;
+    background-color: var(--light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    font-family: "Barlow", sans-serif;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary);
+
+} */
+
+/** Styling for background **/
+
 .content {
     max-width: 100%;
     min-height: 100vh;
@@ -87,6 +167,11 @@ body {
     min-height: 600px;
     perspective: 1000px;
     margin-bottom: 100px;
+}
+
+.card:hover {
+    animation: pulse;
+    animation-duration: 1s;
 }
 
 .card__inner {
@@ -183,15 +268,42 @@ body {
 }
 
 .group1,
-.group2,
-.group3,
-.group4 {
+.group2 {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 2px;
     margin-right: 2px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.implications {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: var(--light);
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 5rem;
+    max-width: 50vw;
+}
+
+.implications h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--primary);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.implications p {
+    line-height: 1.25rem;
+    color: var(--dark);
+}
+
+.implications ul {
+    padding-left: 2rem;
+    color: var(--secondary);
 }
 
 /**Styling for Tableau Graphs**/
@@ -211,11 +323,12 @@ body {
 .tableau-name {
     font-family: "Roboto Slab", serif;
     font-size: 2rem;
-    color: var(--dark);
+    color: var(--primary);
     padding-bottom: 1rem;
 }
 
 .tableau-info {
     padding-bottom: 1rem;
-    color: #222;
+    color: var(--dark);
+    line-height: 1.25rem;
 }
