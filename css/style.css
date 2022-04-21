@@ -20,86 +20,6 @@ body {
     font-family: "Barlow", sans-serif;
 }
 
-/** Styling for Modal **/
-
-/* .button {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.open {
-    font-family: "Barlow", sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    background-color: var(--primary);
-    border: 0;
-    border-radius: 8px;
-    color: var(--light);
-    padding: 1rem 2rem;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-}
-
-.close {
-    font-family: "Barlow", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    background-color: var(--primary);
-    border: 0;
-    border-radius: 8px;
-    color: var(--light);
-    padding: 0.5rem 1rem;
-    margin-top: 1.5rem;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-}
-
-
-.modal-container {
-    font-family: "Barlow", sans-serif;
-    font-weight: 500;
-    color: var(--dark);
-    margin: 0;
-    max-height: 75vh;
-    max-width: 50vh;
-    background-color: var(--light);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.modal {
-    font-family: "Barlow", sans-serif;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.modal-container.show {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.modal h1 {
-    font-family: "Roboto Slab", serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--primary);
-
-} */
-
-/** Styling for background **/
-
 .content {
     max-width: 100%;
     min-height: 100vh;
@@ -107,7 +27,6 @@ body {
     background-color: var(--light);
     background-image: url(../images/Hash2.png);
     background-attachment: fixed;
-    padding-top: 200px;
 }
 
 /**Header Styling**/
@@ -141,6 +60,32 @@ body {
     overflow: hidden;
     opacity: 0.6;
     z-index: -1;
+}
+
+/** About Site Styling **/
+
+.aboutSite {
+    padding: 1.5rem;
+    background-color: var(--light);
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+}
+
+.aboutSite h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary);
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.aboutSiteText {
+    margin: auto;
+    color: var(--dark);
+    font-size: 1.5rem;
+    max-width: 55vw;
+    line-height: 1.5rem;
 }
 
 /**Section Title Styling**/
@@ -219,7 +164,7 @@ body {
 
 .card__face--back {
     transform: rotateY(-180deg);
-    background-image: var(--light);
+    background-color: var(--light);
     border: 4px solid var(--primary);
 }
 
@@ -277,38 +222,10 @@ body {
     flex-wrap: wrap;
 }
 
-.implications {
-    margin: 1rem;
-    padding: 1.5rem;
-    background-color: var(--light);
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    margin-bottom: 5rem;
-    max-width: 50vw;
-}
-
-.implications h2 {
-    font-family: "Roboto Slab", serif;
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--primary);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.implications p {
-    line-height: 1.25rem;
-    color: var(--dark);
-}
-
-.implications ul {
-    padding-left: 2rem;
-    color: var(--secondary);
-}
-
 /**Styling for Tableau Graphs**/
 .graphs {
     margin: 1rem;
+    margin-top: 5rem;
     padding: 1.5rem;
     background-color: var(--light);
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
@@ -331,4 +248,88 @@ body {
     padding-bottom: 1rem;
     color: var(--dark);
     line-height: 1.25rem;
+}
+
+/** Styling for Implications Section **/
+
+.implications {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.implicationsText {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: var(--light);
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 5rem;
+    max-width: 45vw;
+}
+
+.implicationsText h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--primary);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.implicationsText p {
+    line-height: 1.25rem;
+    color: var(--dark);
+}
+
+.implicationsText ul {
+    padding-left: 2rem;
+    color: var(--secondary);
+}
+
+/**Styling for Implications Visual**/
+
+.implicationsVisual {
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    background-color: var(--light);
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 5rem;
+    max-width: 45vw;
+}
+
+/** Styling for Smaller Screens **/
+
+@media only screen and (max-width: 1450px) {
+    .implicationsText {
+        margin: 1rem;
+        padding: 1.5rem;
+        background-color: var(--light);
+        box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        margin-bottom: 5rem;
+        max-width: 100vw;
+    }
+
+    .implicationsVisual {
+        margin: 1rem;
+        padding: 1.5rem;
+        background-color: var(--light);
+        box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        margin-bottom: 5rem;
+        max-width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .aboutSiteText {
+        margin: auto;
+        color: var(--dark);
+        font-size: 1.5rem;
+        max-width: 75vw;
+        line-height: 1.5rem;
+    }
 }

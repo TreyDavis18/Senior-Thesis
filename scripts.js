@@ -13,16 +13,3 @@ window.addEventListener('scroll', function () {
     parallax.style.transform = 'translateY(' + scrollPosition * 0.7 + 'px)';
 });
 
-//Function for modal
-
-// const open = document.getElementById('open');
-// const modal = document.getElementById('modal_container');
-// const close = document.getElementById('close');
-
-// open.addEventListener('click', () => {
-//     modal_container.classList.add('show');
-// });
-
-// close.addEventListener('click', () => {
-//     modal_container.classList.remove('show');
-// });
