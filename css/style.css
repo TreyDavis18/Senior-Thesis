@@ -53,6 +53,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.headerText h4 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: .35em;
+}
+
 .parallax {
     width: 100%;
     height: 100%;
@@ -85,7 +91,7 @@ body {
     color: var(--dark);
     font-size: 1.5rem;
     max-width: 55vw;
-    line-height: 1.5rem;
+    line-height: 1.25em;
 }
 
 /**Section Title Styling**/
@@ -252,19 +258,14 @@ body {
 
 /** Styling for Implications Section **/
 
-.implications {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .implicationsText {
-    margin: 1rem;
+    margin: auto;
     padding: 1.5rem;
     background-color: var(--light);
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     margin-bottom: 5rem;
-    max-width: 45vw;
+    max-width: 60vw;
 }
 
 .implicationsText h2 {
@@ -282,6 +283,7 @@ body {
 }
 
 .implicationsText ul {
+    font-weight: 600;
     padding-left: 2rem;
     color: var(--secondary);
 }
@@ -289,15 +291,38 @@ body {
 /**Styling for Implications Visual**/
 
 .implicationsVisual {
-    margin: 1rem;
-    margin-left: auto;
-    margin-right: 1rem;
+    margin: auto;
     padding: 1.5rem;
     background-color: var(--light);
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     margin-bottom: 5rem;
-    max-width: 45vw;
+    max-width: 60vw;
+}
+
+/** Styling for Solution **/
+
+.solutionText {
+    padding: 1.5rem;
+    background-color: var(--light);
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.solutionText h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary);
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.solutionText p {
+    margin: auto;
+    color: var(--dark);
+    font-size: 1.5rem;
+    max-width: 55vw;
+    line-height: 1.25em;
 }
 
 /** Styling for Solutions **/
