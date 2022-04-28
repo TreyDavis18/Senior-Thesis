@@ -20,6 +20,11 @@ body {
     font-family: "Barlow", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
 .content {
     max-width: 100%;
     min-height: 100vh;
@@ -219,7 +224,8 @@ body {
 }
 
 .group1,
-.group2 {
+.group2,
+.group3 {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 2px;
@@ -296,7 +302,7 @@ body {
     background-color: var(--light);
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    max-width: 60vw;
+    max-width: 70vw;
     position: relative;
 }
 
@@ -312,7 +318,7 @@ body {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -422,6 +428,29 @@ body {
 .solutions p {
     line-height: 1.25rem;
     color: var(--dark);
+}
+
+.sources {
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--light);
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    max-width: 70vw;
+    position: relative;
+}
+
+.sources a {
+    color: var(--dark);
+}
+
+.sources h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
 }
 
 /** Styling for Smaller Screens **/
