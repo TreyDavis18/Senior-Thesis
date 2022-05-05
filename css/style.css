@@ -327,7 +327,7 @@ a {
 }
 
 .next {
-    right: 1.5rem;
+    right: 1.45rem;
     border-radius: 3px 0 0 3px;
 }
 
@@ -338,6 +338,7 @@ a {
 
 .text {
     font-family: "Barlow", sans-serif;
+    font-size: 1.5rem;
     color: var(--dark);
     text-align: center;
 }
